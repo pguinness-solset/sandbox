@@ -1,0 +1,43 @@
+<div init="init();">
+  <h1>Graph Test</h1>
+
+  <h2>Radian</h2>
+
+  <!-- Radian chart -->
+  <plot height="300" width="850" aspect="3" stroke-width="1.5" axis-x-transform="log" axis-x-label="Month" axis-y-label="Sent" axis-y2-label="Performance (%)" legend-switches>
+    <lines x="[[chartData#date]]" y="[[chartData#sent]]" stroke="#ffcc33" label="Sent"></lines>
+    <lines x="[[chartData#date]]" y2="[[chartData#openRate]]" stroke="blue" label="Open Rate"></lines>
+    <lines x="[[chartData#date]]" y2="[[chartData#bounceRate]]" stroke="green" label="Bounce Rate"></lines>
+    <lines x="[[chartData#date]]" y2="[[chartData#clickRate]]" stroke="black" label="Clickthru Rate"></lines>
+    <lines x="[[chartData#date]]" y2="[[chartData#optoutRate]]" stroke="red" label="Opt-out Rate"></lines>
+  </plot>
+
+  <plot-data name="chartData" format="json" ng-model="chartData">
+    <metadata name="date" format="date" date-format="%b-%d"></metadata>
+  </plot-data>
+
+  <!--
+  <h2>Custom</h2>
+
+  <div class="graph-checkboxes">
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="includeStat.sent"> Sent
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="includeStat.openRate"> Open rate
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="includeStat.clickRate"> Clickthru rate
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="includeStat.bounceRate"> Bounce rate
+    </label>
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="includeStat.optoutRate"> Opt-out rate
+    </label>
+  </div>
+
+  <div line-graph width="100%" height="300px">
+  </div>
+  -->
+</div>

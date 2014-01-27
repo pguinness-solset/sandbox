@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sandbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="components/radian/radian.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="sandboxApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="components/es5-shim/es5-shim.js"></script>
+      <script src="components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container-fluid" ng-view></div>
+
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/jquery-ui/ui/jquery-ui.js"></script>
+    <script src="components/radian/lib/jquery.csv-0.71.js"></script>
+    <script src="components/radian/lib/escodegen.browser.js"></script>
+    <script src="components/radian/lib/d3.v2.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/radian/lib/bootstrap.js"></script>
+    <script src="components/radian/lib/hljs.js"></script>
+
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="components/radian/radian.js"></script>
+    <script src="scripts/vendor/d3.js"></script>
+    <script src="scripts/directives/graph.js"></script>
+    <script src="scripts/controllers/graph.js"></script>
+    <script src="scripts/controllers/datepicker.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
